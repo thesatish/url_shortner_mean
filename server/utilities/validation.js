@@ -23,3 +23,7 @@ exports.loginSchema = Joi.object({
     emailId: Joi.string().email().required(),
     password: Joi.string().required(),
 });
+
+exports.urlSchema = Joi.object({
+    originalUrl: Joi.string().required()
+});
