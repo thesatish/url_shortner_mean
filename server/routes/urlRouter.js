@@ -1,9 +1,9 @@
 const express = require("express");
 const app = express.Router();
-const taskController = require('../controllers/urlController');
+const urlController = require('../controllers/urlController');
 
-app.post('/', taskController.createUrl);
-app.patch('/delete',  taskController.deleteTask);
+app.post('/', urlController.createUrl);
+app.patch('/delete',  urlController.deleteTask);
 
 
 
